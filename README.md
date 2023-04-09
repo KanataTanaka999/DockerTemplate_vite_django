@@ -1,7 +1,10 @@
+# フロント環境の新規作成
+
 ``` sh
+rm -rf ./front/app/
 docker-compose run front npm cache clean --force
 docker-compose run front npm create vite@latest
-cp -r ./front/app/project/. ./front/app/
+cp -r ./front/app/{project-name}/. ./front/app/
 docker-compose run front npm install
 ```
 
